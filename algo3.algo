@@ -1,0 +1,48 @@
+PROCEDURE dot_product(v1,v2:ARRAY_OF INTEGER,var dot:INTEGER)
+VAR
+i:INTEGER;
+BEGIN
+dot:=0;
+IF(v1.lenght<> v2.length) THEN
+Write("vectors with différent sizes we cannot calculate dot product");
+dot :=NAN;
+WHILE (i<v1.length) DO
+dot := dot+ v1[i]*v2[i];
+    
+END_WHILE
+END
+
+ALGORITHM orth_vectors
+VAR
+    v1,v2:ARRAY_of INTEGER[50];
+    dot:INTEGER;
+
+BEGIN
+ n1 :=read_size();
+ read_array(n1,v1);
+ n2 := read _size()
+ read_array(n2,v2);
+ dot_produt(v1,v2,dot);
+ IF(dot=0) THEN
+write ("v1 and v2 are orthogonal ")
+
+FUNCTION dot_product(v1,v2: ARRAY_of INTEGER):
+VAR
+i,dot=INTEGER ;
+
+BEGIN
+
+  if(v1.lenght<>):
+    return "Error: v1 and v2 must have the same length"
+  dot_product = NAN
+ 
+  
+    RETURN dot;
+  END
+
+  ALGORITHM orth_vectors
+  VAR
+    set_declarations
+  BEGIN
+    set_instructions
+  END
